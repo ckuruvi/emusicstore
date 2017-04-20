@@ -31,16 +31,16 @@
                     <td>${product.productCategory}</td>
                     <td>${product.productCondition}</td>
                     <td>${product.productPrice} USD</td>
-                    <td><a href="<spring:url value="/productlist/viewproduct/${product.productId}" />"
+                    <td><a href="<spring:url value="/product/viewproduct/${product.productId}" />"
                     ><span class="glyphicon glyphicon-info-sign" /></a>
-                        <a href="<spring:url value="/admin/productinventory/deleteproduct/${product.productId}" />"
+                        <a href="<spring:url value="/admin/product/deleteproduct/${product.productId}" />"
                         ><span class="glyphicon glyphicon-trash" /></a>
-                        <a href="<spring:url value="/admin/productinventory/editproduct/${product.productId}" />"
+                        <a href="<spring:url value="/admin/product/editproduct/${product.productId}" />"
                         ><span class="glyphicon glyphicon-pencil" /></a>
                     </td>
 
                 </tr>
             </c:forEach>
         </table>
-        <a href="<spring:url value="/admin/productinventory/addproduct" />" class="btn btn-primary">Add Product</a>
+        <a href="<spring:url value="/admin/product/addproduct" />" class="btn btn-primary">Add Product</a>
         <%@include file="/WEB-INF/views/template/footer.jsp"%>

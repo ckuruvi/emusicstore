@@ -11,7 +11,7 @@
             <p class="lead"> Update product information </p>
         </div>
 
-        <form:form action="${pageContext.request.contextPath}/admin/productinventory/editproduct" method="post"
+        <form:form action="${pageContext.request.contextPath}/admin/product/editproduct" method="post"
                    commandName="product" enctype="multipart/form-data">
 
         <form:hidden path="productId" value="${product.productId}" />

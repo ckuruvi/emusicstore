@@ -30,7 +30,7 @@
                     <th>Price</th>
                     <th>Action</th>
                 </tr>
-                <tr ng-repeat = "item in cart.cartItems">
+                <tr ng-repeat = "item in cart.cartItem">
                     <td>{{item.product.productName}}</td>
                     <td>{{item.product.productPrice}}</td>
                     <td>{{item.quantity}}</td>
@@ -42,11 +42,11 @@
                     <th></th>
                     <th></th>
                     <th>Grand Total</th>
-                    <th>{{cart.grandTotal}}</th>
+                    <th>{{calGrandTotal()}}</th>
                     <th></th>
                 </tr>
             </table>
-            <a href="<spring:url value="/productlist"/>" class="btn btn-default">Continue Shopping</a>
+            <a href="<spring:url value="/product/productlist"/>" class="btn btn-default">Continue Shopping</a>
             </div>
         </section>
 
