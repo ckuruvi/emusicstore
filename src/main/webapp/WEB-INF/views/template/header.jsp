@@ -18,6 +18,10 @@
     <!-- Angular JS -->
     <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.0.1/angular.min.js" > </script>
 
+    <script type="text/javascript" src="https://code.jquery.com/jquery-2.1.4.min.js"></script>
+
+    <script type="text/javascript" src="https://cdn.datatables.net/1.10.10/js/jquery.dataTables.min.js"></script>
+
     <!-- Bootstrap core CSS -->
     <link href="<c:url value="/resources/css/bootstrap.min.css" ></c:url>" rel="stylesheet">
 
@@ -25,6 +29,8 @@
     <link href="<c:url value="/resources/css/carousel.css" />" rel="stylesheet">
 
     <link href="<c:url value="/resources/css/main.css" />" rel="stylesheet">
+
+    <link href="https://cdn.datatables.net/1.10.10/css/jquery.dataTables.min.css" rel="stylesheet">
 
 </head>
 <!-- NAVBAR
@@ -48,8 +54,8 @@
                 <div id="navbar" class="navbar-collapse collapse">
                     <ul class="nav navbar-nav">
                         <li><a href="<c:url value="/" />">Home</a></li>
-                        <li><a href="<c:url value="/product/productlist"/>">Products</a></li>
-                        <li><a href="#contact">Contact</a></li>
+                        <li><a href="<c:url value="/product/productlist/all"/>">Products</a></li>
+                        <li><a href="<c:url value="/about"/>">About Us</a></li>
 
                     </ul>
                     <ul class="nav navbar-nav pull-right" >
@@ -59,7 +65,7 @@
                             <li><a href="<c:url value="/j_spring_security_logout" />">Logout</a></li>
                             <c:if test="${pageContext.request.userPrincipal.name != 'admin'}">
                                 <li><a href="<c:url value="/customer/cart"/>">Cart</a></li>
-                            </c:if>
+                            </c:if>Exce
                             <c:if test="${pageContext.request.userPrincipal.name == 'admin'}">
                                 <li><a href="<c:url value="/admin"/>">Admin</a></li>
                             </c:if>
